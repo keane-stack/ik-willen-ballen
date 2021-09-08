@@ -1,3 +1,14 @@
+class Ball{
+   constructor(x,y,h,w,vx,vy) {
+    this.h = h;
+    this.w = w;
+    this.x = x;
+    this.y = y;
+    this.vx = vx;
+    this.vy = vy;
+  }
+}
+
 var x, y, v;
 
 function setup() {
@@ -7,8 +18,7 @@ function setup() {
   y = 280;
   vx = 6;
   vy = 6;
-  rx = 3;
-  ry = 3;
+ 
 
 }
 
@@ -28,4 +38,5 @@ function draw() {
   if(y <= 0 || y >= 500){ 
     vy = vy * -1;
   }
+ 
 }
