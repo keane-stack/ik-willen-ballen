@@ -44,7 +44,7 @@ ballList.push(ball);
 }
 
 function draw() {
-background(255);
+background(254);
 ballList.forEach(function(ball){
 ball.draw();
 });
